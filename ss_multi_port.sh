@@ -49,11 +49,11 @@ cfg_3_file=$default_cfg_dir/ss_3_cfg.json
 
 # start service
 echo "start multi-port service:"
-/usr/bin/ss-server -a $user_as -c $cfg_0_file -f $pid_0_file $daemon_opt
-/usr/bin/ss-server -a $user_as -c $cfg_1_file -f $pid_1_file $daemon_opt
-/usr/bin/ss-server -a $user_as -c $cfg_2_file -f $pid_2_file $daemon_opt
-#/usr/bin/ss-server -a $user_as -c $cfg_3_file -f $pid_3_file $daemon_opt
+/usr/local/bin/ss-server -a $user_as -c $cfg_0_file -f $pid_0_file $daemon_opt
+/usr/local/bin/ss-server -a $user_as -c $cfg_1_file -f $pid_1_file $daemon_opt
+/usr/local/bin/ss-server -a $user_as -c $cfg_2_file -f $pid_2_file $daemon_opt
+/usr/local/bin/ss-server -a $user_as -c $cfg_3_file -f $pid_3_file $daemon_opt
 
-echo "start multi-port sevice done!"
+#echo "start multi-port sevice done!"
 
 exit 0
